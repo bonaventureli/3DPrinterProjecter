@@ -1,0 +1,339 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\3D Printer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\3D Printer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 3D Printer"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "3D Printer 2.4.1.1 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MY3DPRINTER_DIALOG DIALOGEX 0, 0, 296, 256
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "3D Printer v2.4.1.1"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,2,3,287,248
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 290, 103
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "Led.LedCtrl",IDC_STATIC,90,16,45,8
+    PUSHBUTTON      "Led.Off",IDC_LED_CTRL,132,14,23,12
+    GROUPBOX        "",IDC_STATIC,84,4,80,29
+    CONTROL         "Slider1",IDC_SLIDER_LED,"msctls_trackbar32",TBS_TOP | 
+                    TBS_NOTICKS | WS_BORDER | WS_TABSTOP,33,76,155,12
+    LTEXT           "Led.SliderTitle",IDC_STATIC,10,78,19,8
+    EDITTEXT        IDC_EDIT_LED,194,76,21,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "Led.Write",IDC_BUTTON_LED_SET,223,75,20,13
+    PUSHBUTTON      "Led.Read",IDC_BUTTON_LED_GET,247,75,18,13
+    CONTROL         "R",IDC_RADIO_R,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,17,58,21,12
+    CONTROL         "G",IDC_RADIO_G,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,48,58,21,11
+    CONTROL         "B",IDC_RADIO_B,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,77,58,20,12
+    CONTROL         "W",IDC_RADIO_W,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,109,58,24,11
+    GROUPBOX        "Led.LedCurrent",IDC_STATIC,4,44,268,55
+    LTEXT           "General.Uart",IDC_STATIC,15,17,22,8
+    PUSHBUTTON      "Uart.Open",IDC_UART,43,14,25,13
+    GROUPBOX        "",IDC_STATIC,7,4,70,29
+    RTEXT           "Led.Light",IDC_STATIC_LIGHT,174,18,30,8
+    COMBOBOX        IDC_COMBO_LIGHT,210,15,38,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Led.confirm",IDC_LIGHT_CTL,251,14,26,14
+    GROUPBOX        "",IDC_LIGHT_GROUP,170,4,114,30
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 205, 75
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    RTEXT           "InputSource.ChangeTo",IDC_STATIC,8,47,37,9
+    COMBOBOX        IDC_COMBO1,48,45,48,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "InputSource.confirm",IDC_INPUT_SOURCE,101,45,30,13
+    GROUPBOX        "",IDC_STATIC,4,32,135,36
+    LTEXT           "General.Uart",IDC_STATIC,12,13,22,8
+    PUSHBUTTON      "Uart.Open",IDC_UART,40,10,25,13
+    GROUPBOX        "",IDC_STATIC,4,0,70,29
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 299, 84
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "R:",IDC_STATIC5,16,51,9,8,NOT WS_VISIBLE
+    LTEXT           "-100",IDC_STATIC_R,28,51,20,10,NOT WS_VISIBLE
+    LTEXT           "℃",IDC_STATIC9,48,51,10,9,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC1,7,43,56,20,NOT WS_VISIBLE
+    LTEXT           "G:",IDC_STATIC6,73,51,9,8,NOT WS_VISIBLE
+    LTEXT           "-100",IDC_STATIC_G,84,51,22,10,NOT WS_VISIBLE
+    LTEXT           "℃",IDC_STATIC10,105,51,10,8,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC2,67,44,55,19,NOT WS_VISIBLE
+    LTEXT           "B:",IDC_STATIC7,134,51,8,10,NOT WS_VISIBLE
+    LTEXT           "-100",IDC_STATIC_B,146,51,20,8,NOT WS_VISIBLE
+    LTEXT           "℃",IDC_STATIC11,168,51,11,8,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC3,126,43,59,20,NOT WS_VISIBLE
+    PUSHBUTTON      "Temperature.Read",IDC_CTRL_TEMP,264,47,19,16,NOT 
+                    WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC13,1,35,291,36,NOT WS_VISIBLE
+    LTEXT           "Board:",IDC_STATIC8,197,51,26,9,NOT WS_VISIBLE
+    LTEXT           "-100",IDC_STATIC_W,222,51,18,9,NOT WS_VISIBLE
+    LTEXT           "℃",IDC_STATIC12,244,51,10,8,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC4,190,43,68,20,NOT WS_VISIBLE
+    LTEXT           "General.Uart",IDC_STATIC,14,17,22,8
+    PUSHBUTTON      "Uart.Open",IDC_UART,42,14,25,13
+    GROUPBOX        "",IDC_STATIC,6,4,70,29
+    LTEXT           "-100",IDC_STATIC_TEMP,130,16,18,9
+    PUSHBUTTON      "Temperature.Read",IDC_TEMP_READ,166,13,28,13
+    LTEXT           "℃",IDC_STATIC_3,152,16,11,8
+    LTEXT           "Temperature.Temp",IDC_STATIC_2,107,16,20,8
+    GROUPBOX        "",IDC_STATIC_1,96,4,108,28
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 285, 79
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "General.Uart",IDC_STATIC,12,17,22,8
+    PUSHBUTTON      "Uart.Open",IDC_UART,40,14,25,13
+    GROUPBOX        "",IDC_STATIC,4,4,70,29
+    PUSHBUTTON      "System.UpGrate",IDC_UPGRATE,231,51,43,14
+    RTEXT           "System.UdiskFileName",IDC_STATIC,11,54,66,8
+    EDITTEXT        IDC_EDIT_UPGRATE_FULLNAME,77,52,151,12,ES_AUTOHSCROLL
+    GROUPBOX        "System.FirmWareUpGrate",IDC_STATIC,4,42,276,29
+END
+
+IDD_DIALOG6 DIALOG DISCARDABLE  0, 0, 187, 78
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "FLIP.x",IDC_CHECK_X,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,11,40,46,8
+    CONTROL         "FLIP.y",IDC_CHECK_Y,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,12,55,45,9
+    PUSHBUTTON      "FLIP.do",IDC_FLIP_DO,83,47,36,14
+    PUSHBUTTON      "Uart.Open",IDC_UART,45,14,27,12
+    LTEXT           "General.Uart",IDC_STATIC,14,16,22,12
+    GROUPBOX        "",IDC_STATIC,8,4,72,28
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,4,1,1
+ PRODUCTVERSION 2,4,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "3D Printer Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "2, 4, 1, 1\0"
+            VALUE "InternalName", "3D Printer\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "3D Printer.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "3D Printer 应用程序\0"
+            VALUE "ProductVersion", "2, 4, 1, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MY3DPRINTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 289
+        TOPMARGIN, 1
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 289
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        RIGHTMARGIN, 283
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 76
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 3D Printer(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\3D Printer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

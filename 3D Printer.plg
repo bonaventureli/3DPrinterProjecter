@@ -1,0 +1,184 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 3D Printer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/3D Printer.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\3D Printer.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5CB.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/3D Printer.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\3D Printer.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\3D PrinterDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\multilanguage.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Para1.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Para2.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Para3.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Para5.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Para6.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\uart.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5CB.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5CC.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Command.c"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\CRC16.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\CRC32.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Delay.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Queue.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5CC.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5CD.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/3D Printer.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5CD.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5CE.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/3D Printer v2.4.1.1.pdb" /machine:I386 /out:"Release/3D Printer v2.4.1.1.exe" 
+".\Release\3D Printer.obj"
+".\Release\3D PrinterDlg.obj"
+".\Release\Command.obj"
+".\Release\CRC16.obj"
+".\Release\CRC32.obj"
+".\Release\Delay.obj"
+".\Release\multilanguage.obj"
+".\Release\Para1.obj"
+".\Release\Para2.obj"
+".\Release\Para3.obj"
+".\Release\Para5.obj"
+".\Release\Para6.obj"
+".\Release\Queue.obj"
+".\Release\StdAfx.obj"
+".\Release\uart.obj"
+".\Release\3D Printer.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5CE.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+3D Printer.cpp
+3D PrinterDlg.cpp
+multilanguage.cpp
+Para1.cpp
+Para2.cpp
+Para3.cpp
+Para5.cpp
+Para6.cpp
+uart.cpp
+Generating Code...
+Compiling...
+Command.c
+Generating Code...
+Compiling...
+CRC16.cpp
+CRC32.cpp
+Delay.cpp
+Generating Code...
+Compiling...
+Queue.c
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "WINMM.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+3D Printer v2.4.1.1.exe - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: 3D Printer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/3D Printer.res" /d "_DEBUG" /d "_AFXDLL" "C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\3D Printer.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D0.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/3D Printer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\3D Printer.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\3D PrinterDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\multilanguage.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Para1.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Para2.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Para3.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Para5.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Para6.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\uart.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D0.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D1.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Command.c"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\CRC16.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\CRC32.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Delay.cpp"
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\Queue.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D1.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/3D Printer.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Administrator\桌面\3D Measure v2.4.1(源代码)\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D2.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/3D Printer v2.4.1.1.pdb" /debug /machine:I386 /out:"Debug/3D Printer v2.4.1.1.exe" /pdbtype:sept 
+".\Debug\3D Printer.obj"
+".\Debug\3D PrinterDlg.obj"
+".\Debug\Command.obj"
+".\Debug\CRC16.obj"
+".\Debug\CRC32.obj"
+".\Debug\Delay.obj"
+".\Debug\multilanguage.obj"
+".\Debug\Para1.obj"
+".\Debug\Para2.obj"
+".\Debug\Para3.obj"
+".\Debug\Para5.obj"
+".\Debug\Para6.obj"
+".\Debug\Queue.obj"
+".\Debug\StdAfx.obj"
+".\Debug\uart.obj"
+".\Debug\3D Printer.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5D3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+3D Printer.cpp
+3D PrinterDlg.cpp
+multilanguage.cpp
+Para1.cpp
+Para2.cpp
+Para3.cpp
+Para5.cpp
+Para6.cpp
+uart.cpp
+Generating Code...
+Compiling...
+Command.c
+Generating Code...
+Compiling...
+CRC16.cpp
+CRC32.cpp
+Delay.cpp
+Generating Code...
+Compiling...
+Queue.c
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+3D Printer v2.4.1.1.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
